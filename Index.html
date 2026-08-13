@@ -1,0 +1,157 @@
+<<!DOCTYPE html>
+<html lang="mn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🌹</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(circle at center, #35151c, #090607 75%);
+  color: white;
+  font-: Georgia, serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  max-width: 500px;
+  min-height: 100vh;
+  padding: 35px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-size: 30px;
+  margin-bottom: 35px;
+  opacity: 0;
+  animation: fadeIn 2s forwards;
+}
+
+.flowers {
+  display: flex;
+  gap: 25px;
+  align-items: flex-end;
+  margin-bottom: 35px;
+}
+
+.rose {
+  font-size: 100px;
+  opacity: 0;
+  transform: translateY(30px) scale(.7);
+  animation: bloom 2s forwards;
+  filter: drop-shadow(0 0 15px rgba(255,255,255,.25));
+}
+
+.rose.red {
+  animation-delay: .8s;
+}
+
+.message {
+  width: 100%;
+  padding: 25px;
+  background: rgba(255,245,240,.96);
+  color: #28171a;
+  border-radius: 18px;
+  line-height: 1.8;
+  font-size: 16px;
+  box-shadow: 0 0 30px rgba(255,180,180,.2);
+
+  opacity: 0;
+  transform: translateY(30px);
+  animation: messageIn 2s 3.2s forwards;
+}
+
+.heart {
+  margin-top: 20px;
+  font-size: 28px;
+  opacity: 0;
+  animation: fadeIn 2s 4s forwards;
+}
+
+@keyframes bloom {
+  0% {
+    opacity: 0;
+    transform: translateY(30px) scale(.5);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(-8px) scale(1.08);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes messageIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <div class="title">Чамдаа... ❤️</div>
+
+  <div class="flowers">
+    <div class="rose">🤍🌹</div>
+    <div class="rose red">❤️🌹</div>
+  </div>
+
+  <div class="message">
+
+    Дундах зай ямар ч хамаа байхгүй шүү миний хайр хэзээ ч өөрчлөгдөхгүй.
+    Чамайгаа маш их санаж байна.
+    Удахгүй уулзах өдрийг тэсэн ядан хүлээе.
+    Зөндөө их хайртай шүү.
+
+    <br><br>
+
+    Чамдаа цэцэг өгөхийг хүссэн ч би чадсангүй ээ.
+    Тэгээд зүгээр л байж байхаар гээд чамтайгаа хамт байсан бол
+    энийг өгөх байсан шүү 🙆🏻‍♂️
+
+    <br><br>
+
+    Хол байгаа ч гэсэн чамайг боддоггүй өдөр гэж байхгүй шүү.
+
+    <br><br>
+
+    Чамайгаа зөндөө гомдоодогт намайг уучлаарай.
+
+    <br><br>
+
+    Чамдаа зөндөө их хайртай шүү ❤️
+
+  </div>
+
+  <div class="heart">♡ 340 км-ийн цаанаас чамдаа ♡</div>
+
+</div>
+
+</body>
+</html>
